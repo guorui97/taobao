@@ -1,0 +1,42 @@
+// 公用的样式
+
+// 上传组件样式,style标签上加了scoped,给其他组件的样式是不能生效的。
+// 自己组件的标签，你在当前组件的template中能看到的，就属于自己的标签，style[scoped]写的样式生效。
+// 其他组件的标签，style[scoped]写的样式作用不了其他组件的样式。
+.avatar-uploader{
+    text-align: center;
+  }
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
+  // 覆盖富文本样式(publish-container目的提高选择器优先级)
+.publish-container .ql-editor{
+  height: 300px;
+}
+.publish-container .ql-toolbar.ql-snow{
+  padding: 0 8px;
+}
+// 覆盖 my-cover 组件中的对话框样式
+.my-cover .el-dialog__body{
+  padding-bottom: 0;
+}
